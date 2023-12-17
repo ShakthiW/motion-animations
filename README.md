@@ -47,7 +47,4 @@ We hope you enjoy this exercise set and it helps you take your web design skills
 
 **P.S.** Don't forget to leave a star if you find this helpful! ✨
 
-**Note:** This code is just a suggestion and you can adapt it to your specific needs and preferences. Feel free to add more information about the projects, resources, and community. You can also personalize the tone and style of the readme file to match your brand or project.
-
-I hope this helps!
 
