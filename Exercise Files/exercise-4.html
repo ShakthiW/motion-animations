@@ -132,6 +132,46 @@
 		}
 
 		/* Air */
+		nav ul a {
+			transition-property: color;
+		}
+
+		.has-submenu::after {
+			transition-property: opacity;
+		}
+
+		.has-submenu ul {
+			display: block;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-1rem);
+			transition-property: opacity, visibility, transform;
+		}
+
+		.has-submenu:hover ul {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+
+		.has-submenu ul a {
+			transition-property: background-color, padding;
+		}
+
+		.has-submenu ul a::after {
+			transition-property: opacity;
+		}
+
+		nav ul a, 
+		.has-submenu::after, 
+		.has-submenu ul,
+		.has-submenu ul a,
+		.has-submenu ul a::after {
+			transition-duration: var(--def-transition-duration);
+			transition-timing-function: ease-in-out;
+		}
+
+
 	</style>
 </head>
 <body>
