@@ -248,6 +248,60 @@
 
 
 		/* Air */
+		.accordion--item {
+			transition: flex-basis, background-size, padding;
+		}
+
+		.accordion--item:hover:not(.opened) {
+			background-size: 32rem;
+			padding-block: 3rem;
+		}
+
+		.accordion--item:hover:not(.opened) .bottom-temp {
+			transform: translate3d(0, -1rem, 0);
+		}
+		
+		.bottom-temp {
+			transition: transform, opacity;
+		}
+
+		.opened .bottom-temp {
+			transform: translate3d(0, 2rem, 0);
+		}
+
+		.temp,
+		.readings {
+			transition: opacity, transform;
+		}
+
+		.temp {
+			transform: translate3d(0, -4rem, 0);
+		}
+
+		.readings {
+			transform: translate3d(0, 4rem, 0);
+		}
+
+		.opened .temp,
+		.opened .readings {
+			transform: translate3d(0, 0, 0);
+		}
+
+		.date li:nth-child(2) {
+			transition-property: color;
+		}
+
+
+		.accordion--item,
+		.bottom-temp,
+		.temp,
+		.readings,
+		.date li:nth-child(2) {
+			transition-duration: var(--def-transition-duration);
+			transition-timing-function: ease-in-out;
+		}
+
+
 		/* In the video I'm using the following icons and imagery: */
 		/* - https://elements.envato.com/photo-realistic-weather-icon-set-K7MGJ3 */
 		/* - https://elements.envato.com/weather-icon-pack-3UHW3R3 */
